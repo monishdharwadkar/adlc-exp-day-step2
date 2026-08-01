@@ -78,6 +78,8 @@ else
 
 var app = builder.Build();
 
+app.MapGet("/api/healthz", () => Results.Ok(new { status = "ok" }));
+
 app.MapPost("/api/conversions", async (ConvertRequest request, CurrencyConversionService service, CancellationToken ct) =>
 {
     try
