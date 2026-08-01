@@ -4,6 +4,9 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <IsPackable>false</IsPackable>
+    <IsTestProject>false</IsTestProject>
+    <VSTEST_CONNECTION_TIMEOUT>180</VSTEST_CONNECTION_TIMEOUT>
+    <VSTestSetting>$(MSBuildProjectDirectory)/Tests.runsettings</VSTestSetting>
   </PropertyGroup>
 
   <ItemGroup>

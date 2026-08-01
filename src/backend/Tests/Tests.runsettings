@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+  <RunConfiguration>
+    <EnvironmentVariables>
+      <!-- CI: avoid 90s negotiation timeout when testhost startup is slow -->
+      <EnvironmentVariable name="VSTEST_CONNECTION_TIMEOUT" value="180" />
+    </EnvironmentVariables>
+  </RunConfiguration>
+</RunSettings>
